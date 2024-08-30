@@ -1,0 +1,740 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '../static/index.css' %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>coding master</title>
+</head>
+
+<body>
+  <section class="a">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p>Abhishek Raj</p>
+        </div>
+        <div class="col-md-3">
+          <p>rajabhishek8867@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <p>9693227403</p>
+        </div>
+        <div class="col-md-2">
+          <p><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="b">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand text-warning" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-warning" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-warning" href="{% url 'about' %}">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-warning" href="#" role="button" data-toggle="dropdown"
+              aria-expanded="false">Courses
+
+            </a>
+            <div class="dropdown-menu text-warning">
+              <a class="dropdown-item text-success" href="#">full stack web dev</a>
+              <a class="dropdown-item text-success" href="#">Machine learning</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item text-success" href="#">Artificial intelligence</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-warning">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'login' %}" class="nav-link text-success">login</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'signup' %}" class="nav-link text-success">signup</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+  </section>
+ 
+
+  <section class="c">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src={% static '../static/image/w5.png'%} class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button type="button" class="btn btn-danger">Free Demo</button>
+            <button type="button" class="btn btn-warning">Buy now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src={% static '../static/image/w4.png' %} class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            <button type="button" class="btn btn-danger">Free Demo</button>
+            <button type="button" class="btn btn-warning">Buy now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src={% static '../static/image/w2.png' %} class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <button type="button" class="btn btn-danger">Free Demo</button>
+            <button type="button" class="btn btn-warning">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="d">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <img src={% static '../static/image/w6.webp' %} class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark text-warning">
+            <img src={% static '../static/image/w9.png' %} class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <img src={% static '../static/image/w8.jpg'%} class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <img src={% static '../static/image/w8.jpg'%} class="card-img" alt="...">
+            <!-- <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="e">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href=""><img src={% static '../static/image/w10.png'%}></a>
+        </div>
+        <div class="col-md-6">
+          <h1>Share what you know; we'll help you get paid for it</h1>
+          <h4>Teachable helps creators engage their online audiences and get paid on their own terms with courses,
+            coaching, community, memberships, and downloadable content.</h4>
+          <a><button>Start For Free</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="f">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Escape the algorithm</h1>
+          <h4>Teachable is a no-code platform for creators who want to build more impactful businesses through courses,
+            coaching, and digital downloads. Whether you’re going viral on TikTok or bringing your in-person classes
+            online, with Teachable you own your content and your students’ experience.....</h4>
+          <a><button>Start For Free</button></a>
+
+        </div>
+        <div class="col-md-6">
+          <iframe width="565" height="450" src="https://www.youtube.com/embed/Jq_Zebxa-YI?si=0hvzHkyQDld_eQFs"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="g">
+    <div class="container">
+      <h1>More ways to sell</h1>
+      <p>There’s no all-in-one formula for success as a creator. That’s why we let you choose how to<br> build your
+        business.<br></p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 21rem;">
+            <img src={% static '../static/image/w11.jpg'%} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Online Courses</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-outline-success">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 21rem;">
+            <img src={% static '../static/image/w12.png'%} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Coaching</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-outline-success">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 21rem;">
+            <img src={% static '../static/image/w13.png'%} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Digital Downloads</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-outline-success">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="h">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Free to start, <br>simple to scale</br></h1>
+          <h5>Our free plan includes everything you need to begin teaching and earning now. Upgrade later for additional
+            resources to support your business’s changing needs.</h5>
+          <a href="#" class="btn btn-outline-warning">read more</a>
+        </div>
+        <div class="col-md-6">
+          <div class="card-free-plan">
+            <div class="text-free-plan">Free plan</div>
+            <p class="paragraph-large">The foundational tools you need<br> to start earning today. No credit<br> card
+              required.</p>
+            <div class="mg-top-32px">
+              <div class="display-12">$0</div>
+            </div>
+
+          </div>
+          <div class="border-card-free-plan"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="j">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src={% static '../static/image/w15.png'%} class="d-block w-110" alt="...">
+        </div>
+        <!-- <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <section class="k">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Less stress. More results.</h1>
+          <p>The tools you need to build, grow, and manage a thriving knowledge business are right here.<br> Get started
+            in three simple steps.</br></p>
+        </div>
+      </div>
+      <div class="mg-top-32px"></div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="mg-bottom-24px">
+            <div class="number">1</div>
+            <div class="space-line"></div>
+          </div>
+          <div class="mg-top-32px">
+            <h3 class="display-7 regular mg-bottom-24px">Prep your content</h3>
+            <p class="paragraph-large">Outline your course, plan a coaching program, or design a digital product you’d
+              like to upload and sell.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="mg-bottom-24px">
+            <div class="number">2</div>
+            <div class="space-line"></div>
+          </div>
+          <div class="mg-top-32px">
+            <h3 class="display-7 regular mg-bottom-24px">Price your product</h3>
+            <p class="paragraph-large">Outline your course, plan a coaching program, or design a digital product you’d
+              like to upload and sell.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="mg-bottom-24px">
+            <div class="number">3</div>
+            <div class="space-line"></div>
+          </div>
+          <div class="mg-top-32px">
+            <h3 class="display-7 regular mg-bottom-24px">Upload your content</h3>
+            <p class="paragraph-large">Outline your course, plan a coaching program, or design a digital product you’d
+              like to upload and sell.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <a href=""><button>Start for Free</button></a>
+    </div>
+  </section>
+  <section class="l">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Unmatched features built<br> to transform lives<br></h1>
+          <p>We’ve spent years working with creators. The result? Features that help you scale and<br> give you peace of
+            mind.<br></p>
+          <a href=""><button>view all products updates</button></a>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src={% static '../static/image/w16.png'%} height="400px" weidth="300px">
+        </div>
+        <div class="col-md-6">
+          <h2>Sell confidently, earn powerfully</h2>
+          <h5>Our robust suite of monetization tools—including upsells, bundles, and order bumps—unlocks more value from
+            every product you create. With teachable:pay creators get:
+          </h5>
+          <ul type="circle">
+            <li>Automated tax filings</li>
+            <li>Fraud monitoring</li>
+            <li>Chargeback support</li>
+            <li>Ecoumerse optimization tools</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Experience award-winning support</h2>
+          <h5>Paid plan subscribers can participate in a range of <u>support designed</u> to help them succeed,
+            including:</h5>
+
+          <ul type="circle">
+            <li>Automated tax filings</li>
+            <li>Fraud monitoring</li>
+            <li>Chargeback support</li>
+            <li>Chargeback support</li>
+          </ul>
+          <h5>Our powerful accelerator challenges—available to all subscribers—are designed to get your business up and
+            running in 30 days.</h5>
+        </div>
+        <div class="col-md-6">
+          <img src={% static '../static/image/w18.jpg'%} height="400px" width="550px">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src={% static '../static/image/w19.jpg'%} height="500px" width="550px">
+        </div>
+        <div class="col-md-6">
+          <h2>The flexible way to do business</h2>
+          <h5>Teachable’s<u> API and integrations</u> double down on our focus on customizability. With Teachable you
+            can:</h5>
+          <ul type="circle">
+            <li>Automate tasks without the need for a web hook</li>
+            <li>Connect your favorite tools from outside Teachable</li>
+            <li>Enable seamless communication between your Teachable products and your favorite marketing and analytics
+              tools</li>
+          </ul>
+        </div>
+      </div>
+      <button id="bu">starts for free</button>
+
+    </div>
+  </section>
+  <section class="m">
+    <div class="container">
+      <h1>More options for more sales...</h1>
+      <h4>Share your knowledge through a complete suite of learning products <br>Designed to sell......</br></h4>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img src={% static '../static/image/w21.jpg'%} class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-outline-success">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img src={% static '../static/image/w22.jpg'%} class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-outline-success">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;">
+            <img src={% static '../static/image/w23.jpg'%} class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-outline-success">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card" style="width: 30rem;">
+            <img src={% static '../static/image/w24.jpg'%} class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-outline-success">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="width: 30rem;">
+            <img src={% static '../static/image/w25.webp'%} class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-outline-success">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="n">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h3 class="mb-4 text-primary "><u>Testimonials</u></h3>
+            <p class="mb-4 pb-2 mb-md-5 pb-md-0 text-danger">
+              Authentic reviews from satisfied customers can provide first hand insights into the
+              reliability,performance,and overall experience,of owning a particular vehicles.
+            </p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src={% static '../static/image/w26.jpg'%} class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3 text-secondary">Rudra pratap</h5>
+            <h6 class="text-primary mb-3">manager</h6>
+            <p class="px-xl-3 text-secondary">
+              <i class="fas fa-quote-left pe-2"></i>Rudra pratap is a manager of the company.He is very frankly to all
+              the employ who is working in this company, his experience is five years of it company.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src={% static '../static/image/w27.jpg'%} class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3 text-secondary">Happy singh</h5>
+            <h6 class="text-primary mb-3">service advisor</h6>
+            <p class="px-xl-3 text-secondary">
+              <i class="fas fa-quote-left pe-2"></i>he is very younger boy,he acts as a bridge between the customers and
+              the service department in an automative dealership.his role is scheduling appointments,providing estimates
+              in the company.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src={% static '../static/image/w28.jpg'%} class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3 text-secondary">rakesh yadav</h5>
+            <h6 class="text-primary mb-3">sales manager</h6>
+            <p class="px-xl-3 text-secondary">
+              <i class="fas fa-quote-left pe-2"></i>he is a very intelligent man and, he is responsible for overseeing
+              the sales team,setting sales goals, and developing strategies to meet or exceed those targets.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="far fa-star fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="0">
+    <div class="container-fluid my-5 ">
+
+      <footer class="text-white text-center text-lg-start bg-dark">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 text-primary">About company</h5>
+
+              <p>
+                my company is a complex enterprises dedicated to the design,manufacturing, and marketing of automobile.
+                Renowned for innovation and engineering excellence.
+              </p>
+
+              <p>
+                my company invests heavily in research and development to stay ahead in the competitive automotive
+                industry .
+              </p>
+
+              <div class="mt-4">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com" type="button" class="btn btn-floating btn-outline-primary btn-lg"><i
+                    class="fab fa-facebook-f"></i></a>
+                <!-- Dribbble -->
+                <a type="button" class="btn btn-floating btn-outline-primary btn-lg"><i class="fab fa-dribbble"></i></a>
+                <!-- Twitter -->
+                <a href="https://www.twitter.com" type="button" class="btn btn-floating btn-outline-success btn-lg"><i
+                    class="fab fa-twitter"></i></a>
+                <!-- Google + -->
+                <a href="https://www.google.com" type="button" class="btn btn-floating  btn-outline-success btn-lg"><i
+                    class="fab fa-google-plus-g"></i></a>
+                <!-- youtube -->
+                <a href="https://www.youtube.com" type="button" class="btn btn-floating btn-outline-danger btn-lg"><i
+                    class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 pb-1 text-primary">Search something</h5>
+
+              <div class="form-outline form-white mb-4">
+                <input type="text" id="formControlLg" class="form-control form-control-lg" placeholder="search here" />
+                <label class="form-label" for="formControlLg">Search</label>
+              </div>
+
+              <ul class="fa-ul" style="margin-left: 1.65em;">
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-home text-warning"></i></span><span class="ms-2">Warsaw, 00-967,
+                    Poland</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-envelope text-warning"></i></span><span
+                    class="ms-2">contact@example.com</span>
+                </li>
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-phone text-warning"></i></span><span
+                    class="ms-2">+91-9693227404</span>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 text-primary">Opening hours</h5>
+
+              <table class="table text-center text-success">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Mon - Thu:</td>
+                    <td>8am - 9pm</td>
+                  </tr>
+                  <tr>
+                    <td>Fri - Sat:</td>
+                    <td>8am - 1am</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday:</td>
+                    <td>9am - 10pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:rgb(241, 222, 204)">
+          <p style="color: purple;"> © 2024 Copyright:</p>
+          <a class="text-danger" href="https://mdbootstrap.com/">abhishek.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+
+    </div>
+    <!-- End of .container -->
+
+
+
+
+
+
+  </section>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="i">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item"><a href="#">Our Services</a></li>
+
+      </ol>
+    </nav>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

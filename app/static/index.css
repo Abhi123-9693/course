@@ -1,0 +1,303 @@
+@media(max-width:2560px) {
+   body {
+      background-color: whitesmoke;
+   }
+
+   .a {
+      padding-top: 14px;
+      position: sticky;
+      background-color: rgb(159, 194, 159);
+   }
+
+   .a a {
+      color: aliceblue;
+
+   }
+
+   .c h5 {
+      color: rgb(79, 188, 192)
+   }
+
+   .c p {
+      color: rgb(79, 188, 192)
+   }
+
+   .d {
+      margin-top: 50px;
+   }
+
+   .e {
+      margin-top: 70px;
+   }
+
+   .e h1 {
+      margin-top: 90px;
+   }
+
+   .e h4 {
+      margin-top: 50px;
+      color: darkolivegreen;
+   }
+
+   .e button {
+      margin-top: 100px;
+      background-color: aqua;
+      height: 50px;
+   }
+
+   .f {
+      margin-top: -25px;
+      background-color: rgb(192, 212, 206);
+      padding: 100px;
+
+   }
+
+   .f h1 {
+      margin-top: 100px;
+   }
+
+   .f h4 {
+      margin-top: 50px;
+      color: darkolivegreen;
+   }
+
+   .f button {
+      margin-top: 100px;
+      background-color: aqua;
+      height: 50px;
+   }
+
+   .f iframe {
+      margin-top: 100px;
+
+   }
+
+   .g {
+      margin-top: 120px;
+   }
+
+   .g h1 {
+      text-align: center;
+   }
+
+   .g p {
+      text-align: center;
+      margin-top: 50px;
+   }
+
+   .h {
+      margin-top: 100px;
+      background-color: rgb(55, 95, 95);
+      padding: 150px;
+   }
+
+   .h h1 {
+      margin-top: -20px;
+      text-align: center;
+      margin-left: -170px;
+   }
+
+   .h h5 {
+      margin-top: 40px;
+      text-align: center;
+      margin-left: -10px;
+   }
+
+   .h a {
+      text-align: center;
+      margin-left: 60px;
+   }
+
+   .h .card-free-plan {
+      height: 18rem;
+      width: 18rem;
+      background-color: white;
+      padding: 30px;
+      margin-left: 70px;
+   }
+
+   .h .text-free-plan {
+      font-size: 30px;
+   }
+
+   .h .display-12 {
+      font-size: 50px;
+   }
+
+   .h .border-card-free-plan {
+      z-index: 0;
+      border: 2px solid blueviolet;
+      width: 62%;
+      height: 101%;
+      position: absolute;
+      top: 14px;
+      bottom: auto;
+      left: 90px;
+      right: 50px;
+   }
+
+   .k {
+      margin-top: 100px;
+   }
+
+   .k h1 {
+      text-align: center;
+      color: darkslategray;
+
+   }
+
+   .k p {
+      text-align: center;
+      margin-top: 20px;
+      color: darkslategray;
+
+   }
+
+   .k .col-md-4 {
+      margin-top: 40px;
+
+   }
+
+
+   .k .col-md-4 .number {
+      font-size: 25px;
+      font-weight: bold;
+
+   }
+
+   .k .space-line {
+      background-color: var(--neutral--800);
+      height: 2px;
+   }
+
+   .k button {
+      margin-left: 520px;
+      background-color: aquamarine;
+      margin-bottom: 200px;
+      margin-top: 50px;
+      height: 50px;
+      width: 200px;
+   }
+
+   .l {
+      background-color: rgb(40, 36, 36);
+   }
+
+   .l h1 {
+      margin-top: 100px;
+      text-align: center;
+      color: whitesmoke;
+   }
+
+   .l p {
+      margin-top: 20px;
+      text-align: center;
+      color: whitesmoke;
+   }
+
+   .l button {
+      margin-left: 450px;
+      margin-top: 15px;
+      background-color: aquamarine;
+      width: 200px;
+      height: 50px;
+   }
+
+   .l h2 {
+      color: whitesmoke;
+      margin-top: 100px;
+      margin-left: 72px;
+   }
+
+   .l h5 {
+      color: whitesmoke;
+      margin-top: 20px;
+      margin-left: 72px;
+   }
+
+   .l img {
+      margin-top: 40px;
+      margin-left: 0px;
+      border-top-left-radius: 200px;
+
+   }
+
+   .l ul {
+      color: whitesmoke;
+      margin-top: 50px;
+      margin-left: 100px;
+      line-height: 30px;
+      font-weight: bold;
+   }
+
+   .l #bu {
+      margin-top: 60px;
+   }
+
+   .m h1 {
+      margin-top: 150px;
+      text-align: center;
+   }
+
+   .m h4 {
+      margin-top: 20px;
+      text-align: center;
+   }
+
+   .m .col-md-4 {
+      margin-top: 50px;
+   }
+
+   .m .col-md-6 {
+      margin-top: 30px;
+   }
+
+  .form{
+   position: absolute;
+    margin-top: 100px;
+    margin-left: 33pc;
+  }
+
+   /* this is read us page */
+
+   .free {
+      background-color: rgb(158, 194, 195);
+   }
+
+   .free h3 {
+      text-align: center;
+   }
+   
+   .free p {
+      margin-top: 100px;
+   }
+   .signup{
+      position: absolute;
+      margin-top: -623px;
+      margin-left: 269px;
+   }
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:1920px) {}
+
+@media(max-width:1440px) {}
+
+@media(max-width:1024px) {}
+
+@media(max-width:768px) {}
+
+@media(max-width:576px) {}
+
+@media(max-width:425px) {}
+
+@media(max-width:375px) {}
+
+@media(max-width:320px) {}

@@ -8,13 +8,15 @@ def index(request):
     return render(request,'index.html')
 
 def login(request):
+    title='login'
+    
     return render(request,'login.html')
 
 def about(request):
     return render(request,'about.html')
 
 def signup(request):
-    title='register'
+    title='signup'
     if request.method=="POST":
         first_name=request.POST['first_name']
         last_name=request.POST['last_name']

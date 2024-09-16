@@ -254,10 +254,13 @@
 
   .form{
    position: absolute;
-   margin-top: 100px;
-   margin-left: 33px;
+   margin-top: -400px;
+   margin-left: 500px;
    border: 3px solid palegreen;
+   color: brown;
+   box-shadow: darkslategray;
   }
+  
 
    /* this is read us page */
 
@@ -274,9 +277,38 @@
    }
    .signup{
       position: absolute;
-      margin-top: -623px;
-      margin-left: 269px;
+      margin-top: -723px;
+      margin-left: 369px;
+      color: brown;
    }
+   .contact h2{
+      margin-top: 50px;
+      margin-left: -300px;
+   }
+   .contact-card{
+      background-color: rgb(217, 246, 246);
+   }
+   .contact-card h2{
+      text-align: center;
+   }
+   .contact-card .container{
+      margin-left: 350px;
+   }
+   .contact-footer{
+      background-color: cadetblue;
+   }
+   .contact-footer h3{
+      margin-top: 50px;
+   }
+   .contact-footer img{
+      margin-left: -400px;
+   }
+   .contact-footer h2{
+      margin-left: 400px;
+      margin-top: -100px;
+   }
+  
+   
 
 }
 

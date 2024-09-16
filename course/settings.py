@@ -17,6 +17,8 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_APP_DIR=os.path.join(BASE_DIR,'app','templates')
 STATIC_APP_DIR=os.path.join(BASE_DIR,'app','static')
+TEMPLATES_backend_DIR=os.path.join(BASE_DIR,'backend','templates')
+STATIC_backend_DIR=os.path.join(BASE_DIR,'backend','static')
 
 
 
@@ -42,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'backend',
+    
 ]
 
 MIDDLEWARE = [
@@ -59,7 +63,8 @@ ROOT_URLCONF = 'course.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_APP_DIR],
+        'DIRS': [TEMPLATES_APP_DIR,TEMPLATES_backend_DIR],
+        
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,3 +131,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# sending email notification
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '779326ff30fa41'
+EMAIL_HOST_PASSWORD = '52175611355eda'
+EMAIL_PORT = '2525'
+

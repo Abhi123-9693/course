@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
-from . models import *
+from backend.models import *
+from app.models import *
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail
@@ -62,11 +63,12 @@ def signup(request):
         number=request.POST['number']
         city=request.POST['city']
         state=request.POST['state']
+        image=request.FILES['image']
         checkbox=request.POST['checkbox']
         cust=Customer.objects.filter(email=email).first()
         # return HttpResponse(cust)
         if cust is None:
-            Customer.objects.create(first_name=first_name,last_name=last_name,email=email,password=password,permanent_address=permanent_address,residincial_address=residincial_address,number=number,city=city,state=state,checkbox=checkbox)
+            Customer.objects.create(first_name=first_name,last_name=last_name,email=email,password=password,permanent_address=permanent_address,residincial_address=residincial_address,number=number,city=city,state=state,image=image,checkbox=checkbox)
             subject ='register'
             message ='register otp' + str(random.randint(0000,9999))
             from_user =settings.EMAIL_HOST_USER
@@ -114,5 +116,12 @@ def delete(request,id):
     cust.save()
     messages.add_message(request,messages.SUCCESS,'delete successfully')
     return redirect('table')
+
+
+def free_read(request):
+    title='read for free'
+    main_image = freeread_db.objects.filter(status=True)
+    title=freeread_db.objects.filter(status=True)
+    return render(request,'free_read.html',{'title':title,'main_image':main_image})
 
 

@@ -5,8 +5,10 @@ from . import views
 urlpatterns =[
     # path('', admin.site.urls),
     path('dashboard/',views.dashboard,name='dashboard'),
-    path('widgets/',views.widgets,name='widgets'),
-    path('header/',views.header,name='header'),
+    path('addproduct/',views.add_product,name='add_product'),
+    path('productlist/',views.product_list,name='product_list'),
+    path('freeread/',views.freeread,name='freeread'),
+    path('delt_freeread/<id>',views.del_freeread,name='delt_freeread'),
 
     
       

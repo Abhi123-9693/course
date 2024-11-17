@@ -10,9 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static '../static/index.css' %}">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
 
-    <title>signup</title>
+    <title>{{title}}</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <img src={% static '../static/image/w50.jpg'%}>
+                    <img src="{% static 'image/w50.jpg' %}">
 
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <h1 class="text-center">Please signup</h1>
             <div class="row">
                 <div class="col-md-12">
-                    <form method="POST" action="">
+                    <form method="POST" action="" enctype="multipart/form-data">
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="col">
@@ -56,8 +56,8 @@
                         </div>
                         <div class="form-group">
                             <label for="inputAddress">permanent address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="enter your permanent address"
-                                name="permanent_address">
+                            <input type="text" class="form-control" id="inputAddress"
+                                placeholder="enter your permanent address" name="permanent_address">
                         </div>
                         <div class="form-group">
                             <label for="inputAddress2">Residincial address</label>
@@ -78,15 +78,16 @@
                                 <label for="inputState">State</label>
                                 <select id="inputState" class="form-control" name="state">
                                     <option selected></option>
-                                    <option>Ranchi</option>
-                                    <option>Patna</option>
-                                    <option>Bokaro</option>
+                                    <option>Bihar</option>
+                                    <option>Assam</option>
+                                    <option>Utter pradesh</option>
                                 </select>
                             </div>
-                            <!-- <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip" name="zip">
-                            </div> -->
+                            <div class=" form-group col-md-4">
+                                <label for="inputimage">upload your image</label>
+                                <input type="file" class="form-control" name="image">
+                            </div>
+                            
                         </div>
                         <div class="form-group">
                             <div class="form-check">

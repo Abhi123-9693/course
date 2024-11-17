@@ -12,6 +12,8 @@ class Customer(models.Model):
     state=models.CharField(max_length=225)
     number=models.IntegerField(max_length=12,default=0)
     checkbox=models.CharField(max_length=225,default=1)
+    image=models.ImageField(default=None,null=True,blank=True,upload_to='img')
+    
 
 # class Customerlogin(models.Model):
 #     email_address=models.EmailField(max_length=225)  
@@ -29,5 +31,7 @@ class Customer(models.Model):
 #     state=models.CharField(max_length=225)
 #     number=models.IntegerField(max_length=12,default=0)
 #     checkbox=models.CharField(max_length=225,default=1)
+
+
 
 

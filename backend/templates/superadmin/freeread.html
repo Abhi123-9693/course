@@ -21,7 +21,7 @@
                         {% csrf_token %}
                         <div class="form-row">
                             <div class="form-group col-md-4">
-                                <label>Image</label>
+                                <label>card Image</label>
                                 <input type="file" id="name" class="form-control" name="img">
                             </div>
                             <div class="form-group col-md-4">
@@ -32,69 +32,71 @@
                                 <label>Card Description</label>
                                 <input type="text" id="name" class="form-control" name="des">
                             </div>
-                            
-                             <button type="submit" class="btn btn-primary">add</button>
+
+                            <button type="submit" class="btn btn-primary">add</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card m-5">
                     <div class="card-header bg-info">
-                      <h3 class="card-title text-light">All Card</h3>
+                        <h3 class="card-title text-light">All Card</h3>
                     </div>
                     <div class="card-body">
                         {% if messages %}
                         {{message.tags}}
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        {% for message in messages %}
-                        <i class="fas fa-check-circle"></i>&nbsp;&nbsp;{{message}}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                {% endfor %}
-            </div>
-            {% endif %}
-                      <table id="example1" class="table table-bordered table-striped">
-                        <thead>
-                
-                          <tr>
-                            <th>S.no</th>
-                            <th> card Title</th>
-                            <th> card Description</th>
-                            <th>Card Image</th>
-                            <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {% for i in main_image %}
-                          <tr>
-                            <td>{{forloop.counter}}</td>
-                            <td>{{i.title}}</td>
-                            <td>{{i.des}}</td>
-                            <td><img src="{{i.img.url}}" width="100px" height="100px"></td>
-                            <td>
-                              <button class="btn btn-sm btn-outline-primary view_employee" data-id="" type="button"><i
-                                  class="fa fa-eye"></i></button>
-                              <a href=""><button class="btn btn-sm btn-outline-primary edit_employee" data-id="" type="button"><i
-                                    class="fa fa-edit"></i></button>
-                                <a href="{% url 'delt_freeread' i.id %}"><button class="btn btn-sm btn-outline-danger remove_employee"
-                                    data-id="" type="button"><i class="fa fa-trash"></i></button>
-                            </td>
+                            {% for message in messages %}
+                            <i class="fas fa-check-circle"></i>&nbsp;&nbsp;{{message}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                             {% endfor %}
-                          </tr>
-                        </tbody>
-                      </table>
+                        </div>
+                        {% endif %}
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+
+                                <tr>
+                                    <th>S.no</th>
+                                    <th> card Title</th>
+                                    <th> card Description</th>
+                                    <th>Card Image</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in main_image %}
+                                <tr>
+                                    <td>{{forloop.counter}}</td>
+                                    <td>{{i.title}}</td>
+                                    <td>{{i.des}}</td>
+                                    <td><img src="{{i.img.url}}" width="100px" height="100px"></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary view_employee" data-id=""
+                                            type="button"><i class="fa fa-eye"></i></button>
+                                        <a href=""><button class="btn btn-sm btn-outline-primary edit_employee"
+                                                data-id="" type="button"><i class="fa fa-edit"></i></button></a>
+                                        <a href="{% url 'delt_freeread' i.id %}"><button
+                                                class="btn btn-sm btn-outline-danger remove_employee" data-id=""
+                                                type="button"><i class="fa fa-trash"></i></button></a>
+                                    </td>
+                                    {% endfor %}
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
-        </div>
-    </section>
+</div>
+</section>
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script> -->
-        
-        {% include 'superadmin/footer.html' %}
+
+{% include 'superadmin/footer.html' %}
